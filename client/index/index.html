@@ -1,4 +1,14 @@
 <template name="index">
+  <style type="text/css">
+    .row { margin-bottom: 0px }
+    .row .col { padding: 0 0rem; }
+    .card, .list-inset { margin: 2px 2px; }
+    .card .card-content { padding: 0px 10px }
+    .card .card-title {
+      font-size: 20px;
+      font-weight: 200;
+    }
+  </style>
   {{#contentFor "headerButtonLeft"}}
     <button class="button button-clear pull-left" data-ion-menu-toggle="left">
       {{#if isAndroid}}
@@ -10,22 +20,73 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Meteor Ionic</h1>
+    <h1 class="title">Home</h1>
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
-      {{#ionList}}
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="backgrounds/dining.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Dining <i class="mdi-navigation-more-vert right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Dinging <i class="mdi-navigation-close right"></i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="backgrounds/transport.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Transportation <i class="mdi-navigation-more-vert right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        {{#ionItem path="actionSheet" iconLeft=true iconRight=true}}
-          {{> ionIcon icon="ios-checkmark" class="positive"}}
-          Action Sheet
-          {{> ionIcon icon="ios-arrow-right"}}
-        {{/ionItem}}
 
-
-
-      {{/ionList}}
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="backgrounds/grocery.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Grocery <i class="mdi-navigation-more-vert right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Grocery <i class="mdi-navigation-close right"></i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="backgrounds/recreation.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Recreation <i class="mdi-navigation-more-vert right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Recreation <i class="mdi-navigation-close right"></i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     {{/ionContent}}
 
   {{/ionView}}
