@@ -1,4 +1,4 @@
-<template name="index">
+<template name="home">
   <style type="text/css">
     .row { margin-bottom: 0px }
     .row .col { padding: 0 0rem; }
@@ -29,7 +29,7 @@
         <div class="col">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="backgrounds/dining.jpg">
+              <a href="{{pathFor 'entry'}}"><img class="activator" src="backgrounds/dining.jpg"></a>
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Dining <i class="mdi-navigation-more-vert right"></i></span>
@@ -43,7 +43,7 @@
         <div class="col">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="backgrounds/transport.jpg">
+              <a href="{{pathFor 'entry'}}"><img class="activator" src="backgrounds/transport.jpg"></a>
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Transportation <i class="mdi-navigation-more-vert right"></i></span>

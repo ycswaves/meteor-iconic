@@ -4,7 +4,6 @@ Router.configure({
 
 
 Router.map(function() {
-  this.route('index', {path: '/'});
-  this.route('actionSheet');
-  //this.route('sideMenu');
+  this.route('home', {path: '/'});
+  this.route('entry', {path: '/new'});
 });

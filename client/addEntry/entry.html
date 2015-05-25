@@ -1,0 +1,38 @@
+<template name="entry">
+  <style type="text/css">
+
+  </style>
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">New</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+        <div class="list">
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Lightsaber
+            </div>
+            <select>
+              <option>Blue</option>
+              <option selected>Green</option>
+              <option>Red</option>
+            </select>
+          </label>
+
+        </div>
+    {{/ionContent}}
+
+  {{/ionView}}
+</template>
