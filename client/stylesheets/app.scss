@@ -37,3 +37,22 @@ $loading-font-size: 22px;
     top: 16px !important;
   }
 }
+
+// override by ycs
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #9E9E9E;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+div.input-field > i.prefix {
+  margin-top: 10px
+}
