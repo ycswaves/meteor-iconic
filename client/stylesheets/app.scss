@@ -56,3 +56,14 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 div.input-field > i.prefix {
   margin-top: 10px
 }
+
+// Disabled and read-only inputs
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly]:not(.cloned-text-input),
+textarea[readonly]:not(.cloned-text-input),
+select[readonly] {
+  background-color: transparent;
+  cursor: not-allowed;
+}

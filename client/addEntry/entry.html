@@ -1,4 +1,5 @@
 <template name="entry">
+
   <style type="text/css">
 
   </style>
@@ -27,6 +28,7 @@
               <label for="icon_prefix">First Name</label>
             </div>
           </div>  
+
           <div class="row">  
             <div class="input-field col s12">
               <i class="mdi-communication-phone prefix"></i>
@@ -34,6 +36,16 @@
               <label for="icon_telephone">Telephone</label>
             </div>
           </div>
+
+          <div class="row">  
+            <div class="input-field col s12 datepicker-div">
+              <i class="mdi-action-today prefix"></i>
+              <input id="icon_cal" type="date" class="datepicker validate">
+              <label for="icon_cal">Date</label>
+            </div>
+          </div>
+
+          
         </form>
       </div>
     {{/ionContent}}
