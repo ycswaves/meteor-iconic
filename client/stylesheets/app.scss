@@ -39,7 +39,13 @@ $loading-font-size: 22px;
 }
 
 // override by ycs
-input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 0px solid #26a69a;
+    box-shadow: 0 0px 0 0 #26a69a; }
+
+
+/*input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
     border-width: medium medium 1px;
     border-style: none none solid;
     border-color: -moz-use-text-color -moz-use-text-color #9E9E9E;
@@ -66,4 +72,4 @@ textarea[readonly]:not(.cloned-text-input),
 select[readonly] {
   background-color: transparent;
   cursor: not-allowed;
-}
+}*/

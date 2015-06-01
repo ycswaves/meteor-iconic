@@ -25,6 +25,10 @@ schemas.Bills = new SimpleSchema({
     type: String,
     label: "title of the bill"
   },
+  totalCost: {
+    type: Number,
+    decimal: true
+  },
   details: {
     type: [schemas.BillDetailSchema],
     label: "detail items of the bill"
